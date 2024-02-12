@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfredo Fonseca Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <script src="https://kit.fontawesome.com/25d5bf4993.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Syne+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+        @import url(css/style.css);
+    </style>
+</head>
+
+<body>
+    <!--------------------------------- Navbar --------------------------------->
+    <nav class="navbar has-shadow is-white">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="media/nameplate.png" alt="Alfredo Fonseca Siqueiros" style="max-height: 40px"
+                    class="py-2 px2">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">HOME</a>
+                <a class="navbar-item" href="work.html">RIGGING</a>
+                <a class="navbar-item" href="work-misc.html">OTHER WORK</a>
+                <a class="navbar-item" href="about.html">ABOUT</a>
+                <a class="navbar-item" href="media/Alfredo Fonseca Resume.pdf">RESUME</a>
+            </div>
+            <div class="navbar-end">
+                <!--------------------------------- Contact --------------------------------->
+                <a class="navbar-item" href="mailto:af7152@rit.edu"><i class="fas fa-envelope fa-3x"></i></a>
+                <a class="navbar-item px-3   "
+                    href="https://www.linkedin.com/in/alfredo-fonseca-siqueiros-344626220/"><i
+                        class="fa-brands fa-linkedin fa-3x"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------- Content --------------------------------->
+    <main>
+        <!--------------------------------- Work in Progress --------------------------------->
+        <div class="content is-normal px-6 py-3">
+            <h1 id="main-header" class="px-6">Misc. Previous Projects</h1>
+            <!--------------------------------- GGP --------------------------------->
+            <div class="content is-normal px-6 py-3">
+                <h2 id="h2" class="title">DirectX 11 Engine</h2>
+                <div class="carousel" id="video-carousel">
+                    <div class="item-1">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/ggp1.png">
+                        </figure>
+                    </div>
+                    <div class="item-2">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/ggp2.png">
+                        </figure>
+                    </div>
+                    <div class="item-3">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/ggp3.png">
+                        </figure>
+                    </div>
+                    <div class="item-4">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/ggp4.png">
+                        </figure>
+                    </div>
+                </div>
+                <p class="section">Created a game engine as a semester long project for my Foundations of Game Graphics
+                    Programming. The entire engine was developed by me using C++ and HLSL. Features include: PBR,
+                    Real-time shadows, Skybox, Blur Post Process. I might continue working on this in my free times and
+                    plan to implement cell-shading and a outline post-process. If you would like to download it this is
+                    the github page: <a
+                        href="https://github.com/nineteenfrog/DX11Engine">https://github.com/nineteenfrog/DX11Engine</a>
+                </p>
+            </div>
+            <!--------------------------------- Finger Guns --------------------------------->
+            <div class="content is-normal px-6 py-3">
+                <h2 id="h2" class="title">Finger Guns</h2>
+                <div class="carousel" id="fingerGuns-carousel">
+                    <div class="item-1">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/fingerGuns1.gif">
+                        </figure>
+                    </div>
+                    <div class="item-2">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/fingerGuns2.png">
+                        </figure>
+                    </div>
+                    <div class="item-3">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/fingerGuns3.png">
+                        </figure>
+                    </div>
+                </div>
+                <p class="section">Finger Guns was a project in which I worked with some of my friends. Finger Guns is a
+                    VR first-person shooter about a scientist who gets betrayed by the company who he developed deadly
+                    weapons for. Now, he must use those weapons to save himself...and maybe all of humanity. The main
+                    things I created while working in Finger Guns were the laser VFX for the hands and also the
+                    post-process shader. It was a combination of a cell shading technique and a cartoon outline effect.
+                    All of this was done using Unreal Engine 5.</p>
+            </div>
+            <!--------------------------------- Croak and Dagger --------------------------------->
+            <div class="content is-normal px-6 py-3">
+                <h2 id="h2" class="title">Croak and Dagger</h2>
+                <div class="carousel" id="sketchfab-carousel">
+                    <div class="item-1">
+                        <figure class="image mx-auto is-16by9" id="carouselImg">
+                            <iframe class="has-ratio"
+                                src="https://www.youtube.com/embed/95CCTlAEmko?si=yZr-vU3htLnIARsN"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </figure>
+                    </div>
+                    <div class="item-2">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/croakAndDagger2.gif">
+                        </figure>
+                    </div>
+                    <div class="item-3">
+                        <figure max-width class="image mx-auto" id="carouselImg">
+                            <img src="media/croakAndDagger1.gif">
+                        </figure>
+                    </div>
+                </div>
+                <p class="section">The video above was made by my friend who also worked on the project. I believe he
+                    speaks about the development and gives a good rundown on the game and presents it in an entertaining
+                    way too. This project was really fun to work in and we got a good working prototype going. I worked
+                    as a technical artist and created some shaders and vfx. I created a dissolve effect that would make
+                    the floating companion disappear once Croak (the frog) unsheathes his weapon. I also created the
+                    water shader using shifting normal maps. Lastly, I also created a tongue rig since we had planned to
+                    implement a tongue-slinging mechanic. Unfortunately, we didn't end up implementing it into the game
+                    but it was still fun to work on.</p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#video-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 2
+        });
+        bulmaCarousel.attach('#sketchfab-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 2
+        });
+        bulmaCarousel.attach('#fingerGuns-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 2
+        });
+    </script>
+</body>
+
+</html>

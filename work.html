@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfredo Fonseca Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <script src="https://kit.fontawesome.com/25d5bf4993.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Syne+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+        @import url(css/style.css);
+    </style>
+</head>
+
+<body>
+    <!--------------------------------- Navbar --------------------------------->
+    <nav class="navbar has-shadow is-white">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="media/nameplate.png" alt="Alfredo Fonseca Siqueiros" style="max-height: 40px"
+                    class="py-2 px2">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">HOME</a>
+                <a class="navbar-item" href="work.html">RIGGING</a>
+                <a class="navbar-item" href="work-misc.html">OTHER WORK</a>
+                <a class="navbar-item" href="about.html">ABOUT</a>
+                <a class="navbar-item" href="media/Alfredo Fonseca Resume.pdf">RESUME</a>
+            </div>
+            <div class="navbar-end">
+                <!--------------------------------- Contact --------------------------------->
+                <a class="navbar-item" href="mailto:af7152@rit.edu"><i class="fas fa-envelope fa-3x"></i></a>
+                <a class="navbar-item px-3   "
+                    href="https://www.linkedin.com/in/alfredo-fonseca-siqueiros-344626220/"><i
+                        class="fa-brands fa-linkedin fa-3x"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------- Content --------------------------------->
+    <main>
+        <!--------------------------------- Work in Progress --------------------------------->
+        <div class="content is-normal px-6 py-3">
+            <h1 id="main-header" class="px-6">Work in Progress</h1>
+            <h2 id="h2" class="title px-6">Procedural Animation Demo</h2>
+            <div class="carousel px-6" id="procAnim-carousel">
+                <p class="section px-6">I wanted to explore the concept of procedural animation for small gestures like
+                    foot placement and also reacting to obstacles in the environment. I used Unity's Animaiton Rigging
+                    package to create some controllers and constraints in real time. Then I created this small demo in
+                    which the character touches the wall as he walks by and also adjusts the foot placement based on an
+                    obstacle. This was a mere proof of concept and I want to maybe implement a more robust demo. I might
+                    evevn switch into Unreal Engine. Currently exploring where I could take this but this was a fun and
+                    interesting project I have been working on.</p>
+                <div class="item-1">
+                    <figure max-width class="image mx-auto" id="carouselImg">
+                        <img src="media/procAnim1.gif">
+                    </figure>
+                </div>
+                <div class="item-2">
+                    <figure max-width class="image mx-auto" id="carouselImg">
+                        <img src="media/procAnim2.gif">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------- Previous Work --------------------------------->
+        <div class="content is-normal px-6 py-3">
+            <h1 id="main-header" class="px-6">Previous Work</h1>
+            <!--------------------------------- Fae --------------------------------->
+            <h2 id="h2" class="title px-6">Changeling Fae</h2>
+            <div class="carousel px-6" id="fae-carousel">
+                <p class="section px-6">This project was part of my internship with <a
+                        href="https://www.changelingvr.com/">Changeling</a>. I was tasked with reworking the main
+                    antagonist
+                    of the game and this was the result. It all began with doing research and internalizing the
+                    character's
+                    place in the game's world and project. Then I created a couple of concepts for the character in
+                    Photoshop and after some iteration we chose a final design. Then, with the finalized design, I
+                    modeled,
+                    textured, and rigged the character. All of the process was done with guidance from the game's
+                    director.
+                    The character was created using Autodesk Maya and Substance Painter.</p>
+                <div class="item-1 item-2">
+                    <figure max-width class="image mx-auto" id="carouselImg">
+                        <img src="media/fae_designs.png">
+                    </figure>
+                </div>
+                <div class="item-3">
+                    <figure class="image mx-auto" id="carouselImg">
+                        <img src="media/fae_colored.png">
+                    </figure>
+                </div>
+                <div class="item-4">
+                    <figure class="image mx-auto" id="carouselImg">
+                        <img src="media/fae_render.jpg">
+                    </figure>
+                </div>
+                <div class="item-5">
+                    <figure class="image mx-auto" id="carouselImg">
+                        <img src="media/fae_rig.png">
+                    </figure>
+                </div>
+            </div>
+            <!--------------------------------- Bird --------------------------------->
+            <h2 id="h2" class="title px-6">Bird Rig</h2>
+            <div class="carousel" id="bird-carousel">
+                <p class="section px-6">The project started with the idea of rigging a bird and doing a physics based
+                    feather
+                    flocking animation. I had recently lost my bird pet named Loki (he escaped :c) so I decided to do
+                    use
+                    him as reference for my bird project. I researched what species they were
+                    and used pictures to see anatomy and model in Maya. I did a low poly model and rigged all the body
+                    as
+                    well as each individual feather. Then I added some dynamic curves for the feather joints to connect
+                    to.
+                    I animated a wing flapping animation and the feathers moved dynamically. Then I created a fur system
+                    using xGen for the feathers. I turned those feathers into polygons and then did a skin bind to the
+                    rig.
+                    Once this was done, I brought it to Substance Painter where I gave it proper textures based on its
+                    species (Agapornis personatus) and finally created a flocking animation using instances of the bird.
+                    <strong>Note:</strong> Model wasn't optimized for a runtime application because I was just going to
+                    render a video
+                    of the flocking animation. For game assets the ideal scenario would have been to use alpha cards.
+                </p>
+                <div class="item-1">
+                    <figure class="image">
+                        <img src="media/bird_0.png">
+                    </figure>
+                </div>
+                <div class="item-2">
+                    <figure class="image px-3">
+                        <img src="media/bird_1.png">
+                    </figure>
+                </div>
+                <div class="item-3">
+                    <figure class="image px-3">
+                        <img src="media/bird_2.png">
+                    </figure>
+                </div>
+                <div class="item-4">
+                    <figure class="image">
+                        <img src="media/bird_4.png">
+                    </figure>
+                </div>
+                <div class="item-5">
+                    <figure class="image px-3">
+                        <img src="media/bird_5.png">
+                    </figure>
+                </div>
+                <div class="item-6">
+                    <figure class="image px-3">
+                        <img src="media/bird_6.png">
+                    </figure>
+                </div>
+                <div class="item-7">
+                    <figure class="image">
+                        <img src="media/bird_7.png">
+                    </figure>
+                </div>
+                <div class="item-8">
+                    <figure class="image px-3">
+                        <img src="media/bird_8.png">
+                    </figure>
+                </div>
+                <div class="item-9">
+                    <figure class="image px-3">
+                        <img src="media/bird_9.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------- Mining Robot --------------------------------->
+        <div class="content is-normal px-6 py-3">
+            <h2 id="h2" class="title px-6">Robot Rig</h2>
+            <div class="carousel" id="robot-carousel">
+                <p class="section px-6">The project started with me creating the mesh. Since it was a robotic
+                    character I modeled individual pieces and then put them together using Maya. Also using Maya, I
+                    created a rig that has an IK/FK switch. Once the Rig was done I took the model to Substance Painter.
+                    I realized I hadn't done the UVs for the model but since I was using many repeated pieces in the
+                    model, I UV unwrapped one of each piece and transfered the UVs to save time. Then I took it back to
+                    Substance where I textured it. Once textured, I exported an FBX from Maya and imported it to Houdini
+                    where I created a crowd simulation. Later I used the asset in one of my game projects <i>Into the
+                        Rift</i>. I helped create an animation blueprint for the character and one of my teamates
+                    programmed simple AI logic so that the robot would follow the player.</p>
+                <div class="item-1">
+                    <figure class="image">
+                        <img src="media/mining_robot.png">
+                    </figure>
+                </div>
+                <div class="item-2">
+                    <figure class="image px-3">
+                        <img src="media/robot_crowd.png">
+                    </figure>
+                </div>
+                <div class="item-3">
+                    <figure class="image">
+                        <img src="media/robot_ue4.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------- Ball Rig --------------------------------->
+        <div class="content is-normal px-6 py-3">
+            <h2 id="h2" class="title px-6">Ball Rig Project</h2>
+            <div class="carousel" id="ball-carousel">
+                <p class="section px-6">Ball Rig - This rig focused on highlighting squashing for animating a bounce. As
+                    seen on
+                    the maya
+                    outliner, a squash handler was added to the ball geometry. Then the master control was given a
+                    channel so that an animator can adjust and key the value of the squash effect. After creating a
+                    animation, I exported as an alembic file into houndini where I instantiated a
+                    crowd simulation and alternated the animation frame as well as the RGB values of every ball. The
+                    render of this can be seen in my demo reel in the home page.</p>
+                <div class="item-1">
+                    <figure class="image">
+                        <img src="media/ball-rig.png">
+                    </figure>
+                </div>
+                <div class="item-2">
+                    <figure class="image">
+                        <img src="media/ball-rig-houdini.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#bird-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 3
+        });
+        bulmaCarousel.attach('#robot-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 2
+        });
+        bulmaCarousel.attach('#ball-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 2
+        });
+        bulmaCarousel.attach('#fae-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 2
+        });
+        bulmaCarousel.attach('#procAnim-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 2
+        });
+    </script>
+</body>
+
+</html>
