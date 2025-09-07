@@ -96,6 +96,27 @@
         <!--------------------------------- Previous Work --------------------------------->
         <div class="content is-normal px-6 py-3">
             <h1 id="main-header" class="px-6">Previous Work</h1>
+            <!--------------------------------- Fiverr Work --------------------------------->
+            <h2 id="h2" class="title px-6">Fiverr Orders</h2>
+            <div class="carousel px-6" id="fiverr-carousel">
+                <p class="section px-6">Before my internship with Garmin I worked as a Freelancer on Fiverr for a bit of
+                    time. During this time I worked on two main projects. One was the most complex rig I had ever done
+                    with a reverse foot system, twist joints for arms and legs, and also facial controls. The other
+                    consisted of creating a character from a concept image. I adjusted the concept art, 3D modeled the
+                    character, UV unwrapp, textured, and rigged it. I also had to rig and model other props in the scene
+                    and create the environment within maya. I also directed the scenes and did the lighting. Both of
+                    these projects were really fun to work on.</p>
+                <div class="item-1">
+                    <figure max-width class="image mx-auto" id="carouselImg">
+                        <img src="media/fiverr1.png">
+                    </figure>
+                </div>
+                <div class="item-2">
+                    <figure max-width class="image mx-auto" id="carouselImg">
+                        <img src="media/fiverr2.png">
+                    </figure>
+                </div>
+            </div>
             <!--------------------------------- Proc Anim --------------------------------->
             <h2 id="h2" class="title px-6">Procedural Animation Demo</h2>
             <div class="carousel px-6" id="procAnim-carousel">
@@ -108,12 +129,7 @@
                     interesting project I have been working on.</p>
                 <div class="item-1">
                     <figure max-width class="image mx-auto" id="carouselImg">
-                        <img src="media/procAnim1low.gif">
-                    </figure>
-                </div>
-                <div class="item-2">
-                    <figure max-width class="image mx-auto" id="carouselImg">
-                        <img src="media/procAnim2.gif">
+                        <img src="media/procAnim1.gif">
                     </figure>
                 </div>
             </div>
@@ -259,6 +275,10 @@
             slidesToShow: 2
         });
         bulmaCarousel.attach('#procAnim-carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 2
+        });
+        bulmaCarousel.attach('#fiverr-carousel', {
             slidesToScroll: 1,
             slidesToShow: 2
         });
