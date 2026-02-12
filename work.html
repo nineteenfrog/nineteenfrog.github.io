@@ -32,8 +32,8 @@
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-start">
                 <a class="navbar-item" href="index.html">HOME</a>
-                <a class="navbar-item" href="work.html">RIGGING</a>
-                <a class="navbar-item" href="work-misc.html">OTHER WORK</a>
+                <a class="navbar-item" href="work.html">WORK</a>
+                <a class="navbar-item" href="work-misc.html">MISC WORK</a>
                 <a class="navbar-item" href="about.html">ABOUT</a>
                 <a class="navbar-item" href="media/Alfredo Fonseca Resume.pdf">RESUME</a>
             </div>
@@ -52,6 +52,68 @@
         <!--------------------------------- Work in Progress --------------------------------->
         <div class="content is-normal px-6 py-3">
             <h1 id="main-header" class="px-6">Work in Progress</h1>
+            <!--------------------------------- Shoot Fan MV  --------------------------------->
+            <h2 id="h2" class="title px-6">Shoot Fan MV</h2>
+            <div class="content is-normal px-6 py-3">
+                <div class="carousel" id="shootfmv-carousel">
+                    <p class="section px-6">This was my main project for my first semester of my master's at Abertay. I
+                        had
+                        the idea of creating a music video the recently released song by Chaeyoung from Twice called
+                        Shoot
+                        (Firecracker). The song touched themes of exploring your mind and imagination. I think this
+                        paired
+                        up well with a stylized and surreal art style. This project is not finshed but this is what I
+                        submitted for the classes. The three main components of this project were:
+                        <b><br>1. Motion Capture Pipeline:</b> Capturing footage with Shogun Live, exporting it with
+                        Shogun
+                        Post,
+                        editing and cleaning it with Autodesk Maya, and finally retargeting in Unreal Engine
+                        <b><br>2. Unreal Tool:</b> This tool was used to manipulate the animations to make them appear
+                        as if
+                        they
+                        were animated in two's, three's, etc. all the way to ten's.
+                        <b><br>3. Shaders Project:</b> I implemented a toon post process shader with the shaders system
+                        in
+                        Unreal
+                        using HLSL to unify the art style.
+                        <br> Watch the WIP on YouTube: <a
+                            href="https://youtu.be/_RjrlljWaus?si=EQRxOcnCXoM6vZdK">https://youtu.be/_RjrlljWaus?si=EQRxOcnCXoM6vZdK</a>
+                    </p>
+                    <div class="item-1">
+                        <figure class="image">
+                            <figure class="image mx-auto is-16by9" id="carouselImg">
+                                <iframe class="has-ratio"
+                                    src="https://www.youtube.com/embed/d6Cl5u_8LRM?si=YJ_CTVpZwc1REHU8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </figure>
+                        </figure>
+                    </div>
+                    <div class="item-2">
+                        <figure class="image">
+                            <figure class="image mx-auto is-16by9" id="carouselImg">
+                                <iframe class="has-ratio"
+                                    src="https://www.youtube.com/embed/zGXWBOulObw?si=QaHz7_p3SKDBePAE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </figure>
+                        </figure>
+                    </div>
+                    <div class="item-3">
+                        <figure class="image">
+                            <figure class="image mx-auto is-16by9" id="carouselImg">
+                                <iframe class="has-ratio"
+                                    src="https://www.youtube.com/embed/6hAstXS8cWU?si=FGkjhInypfHX-BmZ"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </figure>
+                        </figure>
+                    </div>
+                </div>
+            </div>
             <h2 id="h2" class="title px-6">Viktor Arm Rig</h2>
             <div class="carousel px-6" id="procAnim-carousel">
                 <p class="section px-6">
@@ -230,30 +292,6 @@
                 </div>
             </div>
         </div>
-        <!--------------------------------- Ball Rig --------------------------------->
-        <div class="content is-normal px-6 py-3">
-            <h2 id="h2" class="title px-6">Ball Rig Project</h2>
-            <div class="carousel" id="ball-carousel">
-                <p class="section px-6">Ball Rig - This rig focused on highlighting squashing for animating a bounce. As
-                    seen on
-                    the maya
-                    outliner, a squash handler was added to the ball geometry. Then the master control was given a
-                    channel so that an animator can adjust and key the value of the squash effect. After creating a
-                    animation, I exported as an alembic file into houndini where I instantiated a
-                    crowd simulation and alternated the animation frame as well as the RGB values of every ball. The
-                    render of this can be seen in my demo reel in the home page.</p>
-                <div class="item-1">
-                    <figure class="image">
-                        <img src="media/ball-rig.png">
-                    </figure>
-                </div>
-                <div class="item-2">
-                    <figure class="image">
-                        <img src="media/ball-rig-houdini.png">
-                    </figure>
-                </div>
-            </div>
-        </div>
     </main>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
@@ -266,7 +304,7 @@
             slidesToScroll: 1,
             slidesToShow: 2
         });
-        bulmaCarousel.attach('#ball-carousel', {
+        bulmaCarousel.attach('#shootfmv-carousel', {
             slidesToScroll: 1,
             slidesToShow: 2
         });
